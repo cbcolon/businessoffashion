@@ -1,180 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="shortcut icon" href="leaf.ico" />
-<title>S U S T A I N</title>
-<link href="style.css" type="text/css" rel="stylesheet"  />
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-a.hover {
-  color: green;
-  text-decoration: underline;
-}
-a:visited {
-    text-decoration: none;
-    color: #777;
-}
-a:active {
-    text-decoration: underline;
-}
-a:link {
-  text-decoration: underline;
-}
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bgimg-1 {
-  background-image: url("pic2.jpg");
-  min-height: 70%;
-}
-.bgimg-2 {
-  background-image: url("pic1.jpg");
-  min-height: 90%;
-}
-.bgimg-3 {
-  background-image: url("pic3.jpg");
-  min-height: 95%;
-}
-.bgimg-4 {
-  background-image: url("pic4.jpg");
-  min-height: 90%;
-}
-.caption {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.caption span.border {
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-  color: green;
-  background-color: black;
-}
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-}
-</style>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="shortcut icon" href="greek.ico" />
+        <title>Aθάνατοι | Immortals</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #000;
+            }
+            a {
+              color: white;
+              font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 20px;
+                 text-decoration:  none;
+            }
+            a:hover {
+             color: #E2E2E2;
+             font-size: 24px;
+            }
+            .click{
+                position: fixed;
+                width: 500px;
+                height: 200px;
+                top: 70%;
+                right: 10%;
+            }
+            .fly-in-text {
+                list-style: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .fly-in-text li {
+                display: inline-block;
+                margin-right: 50px;
+                              font-family: Lato;
+                font-weight: 300;
+                font-size: 4em;
+                color: #fff;
+                opacity: 1;
+                transition: all 2.5s ease;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.hidden li {
+                opacity: 0;
+            }
+            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+        </style>
+    </head>
+    <body>
 
-<body>
+        <ul class="fly-in-text hidden">
+            <li>S</li>
+            <li>O</li>
+            <li>U</li>
+            <li>N</li>
+            <li>D</li>
+            <li>&nbsp;</li>
+            <li>O</li>
+            <li>N</li>
+        </ul>
 
-  <div class="bgimg-1">
-    <div class="caption">
-      <span class="border">Fashion, Technology, and Sustainability</span>
-    </div>
-    <input type="checkbox" id="op"></input>
-    <div class="lower">
-      <center><label for="op">Menu</label></center>
-    </div>
-    <div class="overlay overlay-hugeinc">
-          <label for="op"></label>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="historical-background.html">Sustainability Issues</a></li>
-              <li><a href="cinematography.html">Sustainable Fashion</a></li>
-              <li><a href="themes.html">Sustainability and Technology</a></li>
-            </ul>
-          </nav>
-    </div>
-  </div>
-
-<div style="color: #777;background-color:white;text-align:center;padding:10px 80px;text-align: justify;">
-  <h3 style="text-align:center;">What is sustainable fashion?</h3>
-  <center><p><b><i>&ldquo;There is no beauty in the finest cloth if it makes hunger and unhappiness.&rdquo;</i> - Mahatma Gandhi</b><p></center>
-  <center>
-    <p><i>&#8220;Sustainable fashion as part of the slow fashion movement is often misleadingly described as the opposite of fast fashion. Slow fashion is based on a philosophical ideal that centres on sustainability values, such as good working conditions and reducing environmental destruction (e.g. Bourland, 2011; Pookulangara and Shephard, 2013).&#8221;</i></p>
-    <p>Sustainable fashion is a philosophy and movement aimed at creating a system of production within the fashion industry that can be sustained indefinitely and minimizes violations of social responsibility and human impact on the environment. It is converse to the idea of fast fashion, which refers to the rapid production and distribution of garments to capture the most recent fashion trends on the runway. Sustainable fashion challenges the fast fashion paradigm by breaking down the boundaries between corporations and their stakeholders, slowing down the production process to a more ethical and environmentally-conscious timeframe, and granting rights to empower workers and consumers to make choices and enable change (Clark, 2008). According to the 2015 documentary True Cost, sustainable fashion extends far beyond a mere niche fad; rather, it is an entire movement that builds on the social, economic, and natural price paid by the largescale production of the fashion industry.</p>
-   </center>
-</div>
-
-<div class="bgimg-2">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">κ α ι ρ ό ς</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:white;background-color:#282E34;text-align:center;padding:10px 80px;text-align: justify;">
-    <h3 style="text-align:center; color:white;">A history of sustainable fashion</h3>
-    <center>
-
-<p><b><i>&ldquo;The greatest threat to our planet is the belief that someone else will save it.&rdquo;</i> - Robert Swan</b></p>
-
-<p>When the very first department stores appeared in the United States during the rise of the Industrial Revolution in the late 19th century, sewing machines were relatively new innovations that were not nearly as commonplace as they would later become, and child labor laws were lax, if existent at all. The post-War consumer boom of the 1950s brought about the rise of strip malls, outlet stores, and seasonal sales that encouraged mass consumption; shopping was now somewhat of a national pastime. The 1960s and 1970s brought about the era of social and political movements that focused on civil rights and human impact; the first Earth Day was commemorated on April 22, 1970. It is here that sustainable fashion finds its roots.</p>
-<p>The later part of the 20th century saw the rise of eco-consciousness, the DIY movement, and consumer awareness of clothes’ potential second life. In 1973, the U.S. and the World Trade Organization signed an agreement that set a quota on the amount of textile and apparel imports from specific countries; effectively, this led to higher domestic manufacturing costs and was ultimately eliminated in 2005. Following that, an increase in the outsourcing of manufacturing abroad led to a slew of controversies that prompted consumers to begin to question the origin of their garments.</p>
-
-  <p>In 1991, Nike came under fire for issues of low wages and poor working conditions in one of its Indonesian factories—consumer protests and boycotts incited changes to Nike’s supply chain. Patagonia’s Responsible Economy campaign (and Levi’s Care Tag for Our Planet, and Water?Less, Waste?Less, and Wellthread collections) call on consumers and businesses alike to rethink disposability for more effective resource allocation. Even big names such as Calvin Klein and Gucci are making moves towards sustainability, and mainstream brands like Stella McCartney and Puma are beginning to incorporate faux fur and environmental profit and loss accounting. This, at its core, is what sustainable fashion is all about.
-
-</p>
-
-     </center>
-  </div>
-</div>
-
-<div class="bgimg-3">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">κ α λ ο ψ ί α</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:white;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center; color:white;">The future of sustainable fashion</h3>
-    <center>
-      <p><b><i>&ldquo;Fashion has the ability to not only redefine our own industry, but become a role model for others to reinvent their own practices.&rdquo;</i> - Timothy Ho</b></p>
-    <p>The future of sustainable fashion is bright; the use of sustainable fibers, 3D printing, launching chemical management programs, enhancing product traceability and supply chain transparency, decreasing product packaging, and promoting textile recycling, there is still much to be done in order for sustainable fashion to become the norm. The push for slow fashion—a counter-reaction against the fast fashion industry—and the Made in the USA movement are just two examples of strides towards a more sustainable, ethical production of garments in a world dominated by fast fashion. The rise in popularity of e-commerce sites has made it easier to purchase fashion items with the mere click of a button, which has only increased the necessity for rapid and mass production. In order for sustainable fashion to thrive, fashion companies must embrace a circular economy and promote the upcycling of materials and goods amongst consumers. The future of sustainable fashion and the fashion industry at large will not be entirely reliant on cheaper clothing or 3D printed garments or even technology-as-fashion, but rather by how our fashion items are made, used, and disposed of and reused.
-</p>
-    </center>
-  </div>
-</div>
-
-<div class="bgimg-4">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">κ α λ ό ς</span>
-  </div>
-</div>
-
-<div style="color: #777;background-color:white;text-align:center;padding:15px 80px;text-align: justify;">
-  <div class="stitched">
-  <h3 style="text-align:center;"><i>Credits</i></h3>
-  <footer>
-  			 <center>
-         <hr /><p>Christopher B. Colon</p>
-         <p>Fashion History and Research Methods | F10 ART 324E | Final Project</p>
-         <p>Link to One Pager | <a href="mood.png" download> Mood Board</a> | Bibliography </p>
-       </div>
-       </center>
-  		</footer>
-    </div>
-
-<audio controls loop autoplay style="display:none">
-  <source src="mp3/audio.mp3" type="audio/mpeg">
-</audio>
-
-  <script>
-  var audio = document.getElementById("myaudio");
-  audio.volume = 0.3;
-</script>
+        <div class="click">
+            <p>  <a href="home.html">Press Here to Embark >></a> </p>
+        </div>
 
 
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+            })();
+        </script>
+
+    </body>
 </html>
